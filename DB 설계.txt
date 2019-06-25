@@ -1,0 +1,80 @@
+Students
+학생(학번(PK), 이름, 전화번호)
+
+MediBox
+약관리(약이름(PK), 개수, 가격, 증상)
+
+Log
+진단(진단 번호(PK), 학번(FK), 약이름(FK), 날짜)
+
+
+-----------------------------------------------------------
+create user scott
+identified by tiger
+default tablespace  users;
+
+grant connect, resource to scott;
+
+conn scott/tiger
+
+CREATE TABLE Students(
+stuid NUMBER(5) PRIMARY KEY,
+stuname VARCHAR2(10),
+stutel VARCHAR2(20)
+);
+
+INSERT INTO Students VALUES(45071, '권회창', '010-6473-8654');
+INSERT INTO Students VALUES(45100, '지한별', '010-5370-0725');
+INSERT INTO Students VALUES(45090, '이수빈', '010-4127-1566');
+
+
+CREATE TABLE MediBox(
+mediname VARCHAR2(25) PRIMARY KEY,
+counts NUMBER(2),
+price NUMBER(6),
+symptom VARCHAR2(15)
+);
+
+insert into medibox values ('게보린', 20 ,5000 ,'통증');
+insert into medibox values ('이지엔식스',20, 5000,'통증');
+insert into medibox values('타이레놀',20,5000,'통증');
+
+insert into medibox values('부루펜정',20,4000,'발열');
+insert into medibox values('이지엔식스이브',20,4000,'발열');
+insert into medibox values('바이엘아스피린',20,4000,'발열');
+
+insert into medibox values('까스활명수',20,2000,'소화불량');
+insert into medibox values('베아제',20,2000,'소화불량');
+insert into medibox values('훼스탈플러스',20,2000,'소화불량');
+
+insert into medibox values('듀오던',20,6000,'철과상');
+insert into medibox values('드레싱밴드',20,6000,'철과상');
+insert into medibox values('이지덤',20,6000,'철과상');
+
+insert into medibox values('신신파스',20,1000,'타박상');
+insert into medibox values('제일쿨파프',20,1000,'타박상');
+insert into medibox values('케토톱겔',20,1000,'타박상');
+
+insert into medibox values('스트렙실',20,5000,'감기');
+insert into medibox values('코메키나',20,5000,'감기');
+insert into medibox values('테라플루',20,5000,'감기');
+
+
+
+
+CREATE TABLE Log(
+logid NUMBER(2) PRIMARY KEY,
+stuid NUMBER(5) REFERENCES Students(stuid),
+mediname VARCHAR2(25) REFERENCES MediBox(mediname),
+logdate DATE
+);
+
+
+
+delete from log;
+drop sequence num_seq;
+create sequence num_seq
+start with 1
+increment by 1;
+
+
