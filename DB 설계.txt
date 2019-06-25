@@ -1,11 +1,11 @@
 Students
-ÇĞ»ı(ÇĞ¹ø(PK), ÀÌ¸§, ÀüÈ­¹øÈ£)
+í•™ìƒ(í•™ë²ˆ(PK), ì´ë¦„, ì „í™”ë²ˆí˜¸)
 
 MediBox
-¾à°ü¸®(¾àÀÌ¸§(PK), °³¼ö, °¡°İ, Áõ»ó)
+ì•½ê´€ë¦¬(ì•½ì´ë¦„(PK), ê°œìˆ˜, ê°€ê²©, ì¦ìƒ)
 
 Log
-Áø´Ü(Áø´Ü ¹øÈ£(PK), ÇĞ¹ø(FK), ¾àÀÌ¸§(FK), ³¯Â¥)
+ì§„ë‹¨(ì§„ë‹¨ ë²ˆí˜¸(PK), í•™ë²ˆ(FK), ì•½ì´ë¦„(FK), ë‚ ì§œ)
 
 
 -----------------------------------------------------------
@@ -23,9 +23,8 @@ stuname VARCHAR2(10),
 stutel VARCHAR2(20)
 );
 
-INSERT INTO Students VALUES(45071, '±ÇÈ¸Ã¢', '010-6473-8654');
-INSERT INTO Students VALUES(45100, 'ÁöÇÑº°', '010-5370-0725');
-INSERT INTO Students VALUES(45090, 'ÀÌ¼öºó', '010-4127-1566');
+INSERT INTO Students VALUES(45071, 'ê¶ŒíšŒì°½', '010-0000-0000');
+INSERT INTO Students VALUES(45100, 'ê¹€íšŒì°½', '010-1111-1111');
 
 
 CREATE TABLE MediBox(
@@ -35,29 +34,29 @@ price NUMBER(6),
 symptom VARCHAR2(15)
 );
 
-insert into medibox values ('°Ôº¸¸°', 20 ,5000 ,'ÅëÁõ');
-insert into medibox values ('ÀÌÁö¿£½Ä½º',20, 5000,'ÅëÁõ');
-insert into medibox values('Å¸ÀÌ·¹³î',20,5000,'ÅëÁõ');
+insert into medibox values ('ê²Œë³´ë¦°', 20 ,5000 ,'í†µì¦');
+insert into medibox values ('ì´ì§€ì—”ì‹ìŠ¤',20, 5000,'í†µì¦');
+insert into medibox values('íƒ€ì´ë ˆë†€',20,5000,'í†µì¦');
 
-insert into medibox values('ºÎ·çÆæÁ¤',20,4000,'¹ß¿­');
-insert into medibox values('ÀÌÁö¿£½Ä½ºÀÌºê',20,4000,'¹ß¿­');
-insert into medibox values('¹ÙÀÌ¿¤¾Æ½ºÇÇ¸°',20,4000,'¹ß¿­');
+insert into medibox values('ë¶€ë£¨íœì •',20,4000,'ë°œì—´');
+insert into medibox values('ì´ì§€ì—”ì‹ìŠ¤ì´ë¸Œ',20,4000,'ë°œì—´');
+insert into medibox values('ë°”ì´ì—˜ì•„ìŠ¤í”¼ë¦°',20,4000,'ë°œì—´');
 
-insert into medibox values('±î½ºÈ°¸í¼ö',20,2000,'¼ÒÈ­ºÒ·®');
-insert into medibox values('º£¾ÆÁ¦',20,2000,'¼ÒÈ­ºÒ·®');
-insert into medibox values('ÈÑ½ºÅ»ÇÃ·¯½º',20,2000,'¼ÒÈ­ºÒ·®');
+insert into medibox values('ê¹ŒìŠ¤í™œëª…ìˆ˜',20,2000,'ì†Œí™”ë¶ˆëŸ‰');
+insert into medibox values('ë² ì•„ì œ',20,2000,'ì†Œí™”ë¶ˆëŸ‰');
+insert into medibox values('í›¼ìŠ¤íƒˆí”ŒëŸ¬ìŠ¤',20,2000,'ì†Œí™”ë¶ˆëŸ‰');
 
-insert into medibox values('µà¿À´ø',20,6000,'Ã¶°ú»ó');
-insert into medibox values('µå·¹½Ì¹êµå',20,6000,'Ã¶°ú»ó');
-insert into medibox values('ÀÌÁö´ı',20,6000,'Ã¶°ú»ó');
+insert into medibox values('ë“€ì˜¤ë˜',20,6000,'ì² ê³¼ìƒ');
+insert into medibox values('ë“œë ˆì‹±ë°´ë“œ',20,6000,'ì² ê³¼ìƒ');
+insert into medibox values('ì´ì§€ë¤',20,6000,'ì² ê³¼ìƒ');
 
-insert into medibox values('½Å½ÅÆÄ½º',20,1000,'Å¸¹Ú»ó');
-insert into medibox values('Á¦ÀÏÄğÆÄÇÁ',20,1000,'Å¸¹Ú»ó');
-insert into medibox values('ÄÉÅäÅé°Ö',20,1000,'Å¸¹Ú»ó');
+insert into medibox values('ì‹ ì‹ íŒŒìŠ¤',20,1000,'íƒ€ë°•ìƒ');
+insert into medibox values('ì œì¼ì¿¨íŒŒí”„',20,1000,'íƒ€ë°•ìƒ');
+insert into medibox values('ì¼€í† í†±ê²”',20,1000,'íƒ€ë°•ìƒ');
 
-insert into medibox values('½ºÆ®·¾½Ç',20,5000,'°¨±â');
-insert into medibox values('ÄÚ¸ŞÅ°³ª',20,5000,'°¨±â');
-insert into medibox values('Å×¶óÇÃ·ç',20,5000,'°¨±â');
+insert into medibox values('ìŠ¤íŠ¸ë ™ì‹¤',20,5000,'ê°ê¸°');
+insert into medibox values('ì½”ë©”í‚¤ë‚˜',20,5000,'ê°ê¸°');
+insert into medibox values('í…Œë¼í”Œë£¨',20,5000,'ê°ê¸°');
 
 
 
