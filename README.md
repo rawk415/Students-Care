@@ -24,3 +24,13 @@
 * MediBox // 약 선택 화면
 * Medicine_Info // 약 정보 Layout
 
+
+### 실행화면
+
+![result1](./img/result/1.png)
+![result2](./img/result/2.png)
+![result3](./img/result/3.png)
+![result4](./img/result/4.png)
+![result5](./img/result/5.png)
+![result6](./img/result/6.png)
+![result7](./img/result/7.png)
