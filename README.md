@@ -27,10 +27,10 @@
 
 ### 실행화면
 
-![result1](./result/1.png)
-![result2](./result/2.png)
-![result3](./result/3.png)
-![result4](./result/4.png)
-![result5](./result/5.png)
-![result6](./result/6.png)
-![result7](./result/7.png)
+![result1](./img/result/1.png)
+![result2](./img/result/2.png)
+![result3](./img/result/3.png)
+![result4](./img/result/4.png)
+![result5](./img/result/5.png)
+![result6](./img/result/6.png)
+![result7](./img/result/7.png)
