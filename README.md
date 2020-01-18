@@ -1,9 +1,7 @@
 2019 1학기 JAVA_Project
 =====
 ### 소프트웨어 정보  
-
-`eclipse photon(June 2018)`
-`jdk 10`
+`jdk 10` `Oracle Database 11g Express Edition`
 
 ### 프로젝트 수행 목적  
   * #### 프로젝트 정의
